@@ -1,21 +1,20 @@
- * {
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
-  body {
+body {
     /* more on this crazy alphanumerical value in a minute! */
-    color: #39a6b2;
-    font-family: Helvetica, Arial, sans-serif;
+  color: #39a6b2;
+  font-family: Helvetica, Arial, sans-serif;
   }
-  
   /* apply styles to <header> */
-  header {
-    padding: 20px 35px;
-    background-color: #39a6b2;
+  header{
+      padding: 20px 35px;
+      background-color: #39a6b2;
   }
-  
   header h1 {
     font-weight: bold;
     font-size: 36px;
@@ -23,74 +22,67 @@
     margin: 0;
     display: inline;
   }
+  
+  header a {
+    color: #fce138;
+  }
   header a {
     text-decoration: none;
     color: #fce138;
   }
-  
   header nav {
     float: right;
     margin: 7px 0;
   }
-  
   header nav ul li {
     display: inline;
   }
-  
   header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
   }
-  
   footer {
     background: #fce138;
     width: 100%;
     padding: 40px 35px;
   }
-  
   footer h2 {
     display: inline;
     color: #024e76;
-    font-size: 30px;
-    margin: 0;
+  font-size: 30px;
+  margin: 0;
   }
-  
   footer div {
     float: right;
     line-height: 1.5;
     text-align: right;
   }
-  
   footer a {
     color: #024e76;
   }
-  
   section {
     padding: 60px;
-  }
   
+  }
   /* Hero Style Start */
-  .hero {
-    background-image: url('https://static.fullstack-bootcamp.com/module-1/hero-bg.jpg ');
-    height: 600px;
+.hero {
+    background-image: url(" https://static.fullstack-bootcamp.com/module-1/hero-bg.jpg");
     background-size: cover;
-    background-position: center;
-    position: relative;
+  background-position: center;
+    height: 600px;
   }
-  /* Hero Style End */
-  
   .hero-form {
-    border: 3px solid #024e76;
     background-color: #fce138;
     padding: 20px;
     width: 500px;
     color: #024e76;
+    border: solid 3px #024e76;
     position: absolute;
     bottom: 120px;
     right: 140px;
-  }
   
+  }
   .hero-form h3 {
     font-size: 24px;
     margin: 0;
@@ -98,7 +90,6 @@
   .hero-form p {
     margin: 5px 0 15px 0;
   }
-  
   .form-input {
     border: 1px solid #024e76;
     display: block;
@@ -108,11 +99,9 @@
     width: 100%;
     margin-bottom: 15px;
   }
-  
   .hero-form label {
     margin: 0 5px;
   }
-  
   .hero-form button {
     color: #fce138;
     background-color: #024e76;
@@ -120,11 +109,13 @@
     padding: 10px 20px;
     font-size: 16px;
   }
-  
+  /* Hero Style End */
   .intro {
     text-align: center;
   }
-  
+  .intro h2 {
+     
+  }
   .intro p {
     line-height: 1.7;
     color: #39a6b2;
@@ -132,12 +123,13 @@
     font-size: 20px;
     margin: 0 auto;
   }
-  
   .steps {
     text-align: center;
     background: #fce138;
   }
-  
+  .steps span {
+    font-size: 38px;
+  }
   .steps div {
     margin-bottom: 80px;
   }
@@ -157,11 +149,9 @@
     color: #39a6b2;
     font-size: 23px;
   }
-  
-  .steps span {
-    font-size: 38px;
+  .steps h2 {
+   
   }
-  
   .section-title {
     font-size: 55px;
     color: #024e76;
@@ -178,19 +168,15 @@
   .secondary-border {
     border-color: #39a6b2;
   }
-  
   .trainers {
     text-align: center;
   }
-  
   .trainer {
     width: 900px;
     margin: 0 auto 30px auto;
     background: #024e76;
     color: #fce138;
-    overflow: auto;
   }
-  
   .trainer img {
     width: 35%;
     float: left;
@@ -201,7 +187,13 @@
     float: left;
     width: 65%;
   }
+  .text-left {
+    text-align: left;
+  }
   
+  .text-right {
+    text-align: right;
+  }
   .trainer-bio h3 {
     font-size: 32px;
     margin-bottom: 8px;
@@ -216,13 +208,5 @@
   .trainer-bio p {
     font-size: 17px;
     line-height: 1.3;
-  }
-  
-  .text-left {
-    text-align: left;
-  }
-  
-  .text-right {
-    text-align: right;
   }
   
