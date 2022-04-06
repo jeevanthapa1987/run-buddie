@@ -34,9 +34,13 @@
     color: #fce138;
   }
   
-  header nav {
+  header nav ul {
     
-    margin: 7px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
   }
   
   header nav ul li {
@@ -46,7 +50,7 @@
   header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 22px;
+    font-size: 1.55vw;
   }
   
   footer {
