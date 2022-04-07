@@ -17,6 +17,10 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: -webkit-sticky;
+  position: sticky;
+top: 0;
+
 }
 
 header h1 {
@@ -89,7 +93,8 @@ align-items: flex-start;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  
+  background-attachment: fixed;
+background-position: 80%;
 }
 /* Hero Style End */
 
@@ -101,7 +106,7 @@ align-items: flex-start;
   color: #024e76;
   width: 40%;
   margin: 3.5%;
-
+border-radius: 15px;
 }
 
 .hero-form h3 {
@@ -366,11 +371,18 @@ font-size: 16px;
   display: flex;
 }
 
+
+.some-class {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
+}
+
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 {
@@ -412,6 +424,56 @@ font-size: 16px;
   }
 }
 
+/* default state */
+button {
+  background: white;
+}
+
+/* mouse is hovering over button */
+button:hover {
+  background: red;
+}
+
+/* button is in focus because it was the most recently clicked element on the page */
+button:focus {
+  background: green;
+}
+
+/* user is actively pressing the cursor down on the button */
+button:active {
+  background: blue;
+}
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
+/* update existing rule with this declaration */
+.form-input {
+  background-color: rgba(255,255,255, 0.75);
+}
+
+/* create a new rule for focus state */
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+}
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+.step:last-child {
+  border-bottom: 1px solid #39a6b2;
+}
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
   section {
